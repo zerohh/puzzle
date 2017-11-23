@@ -1,0 +1,184 @@
+html {
+  height: 100%;
+}
+html {
+  font-size: 100px;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 11.25px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 20.0px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    width: 750px;
+  }
+}
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.widthAndHeight100 {
+  width: 100%;
+  height: 100%;
+}
+.page {
+  background-image: url("../../dist/imgs/bg.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 0 auto;
+}
+.hidden {
+  display: none;
+}
+.content {
+  position: relative;
+  top: 88%;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.marginAuto {
+  margin: 0 auto;
+}
+.buttonStyle {
+  position: relative;
+  top: 88%;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  width: 7em;
+  height: 3.5em;
+  background-size: 100% 100%;
+}
+.startButton {
+  background-image: url("../../dist/imgs/startbutton.png");
+  position: relative;
+  top: 88%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  width: 7em;
+  height: 3.5em;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.page2 {
+  background-image: url("../../dist/imgs/page2.jpg");
+}
+.introductionButton {
+  background-image: url("../../dist/imgs/introductionButton.png");
+  position: relative;
+  top: 88%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  width: 7em;
+  height: 3.5em;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.page3 {
+  background-image: url("../../dist/imgs/page3.png");
+}
+.page4 {
+  background-image: url("../../dist/imgs/page4.jpg");
+}
+.page5 {
+  background-image: url("../../dist/imgs/page5.jpg");
+}
+.Checkpoint1 {
+  width: 14.4em;
+  height: 14.4em;
+  margin: 0 auto;
+  background-color: aquamarine;
+  z-index: 2;
+  position: absolute;
+  top: 32%;
+  left: 0;
+  right: 0;
+}
+.Checkpoint1 div {
+  position: absolute;
+  width: 7.2em;
+  height: 7.2em;
+  z-index: 4;
+  background-size: 100% 100%;
+}
+.pic1 {
+  background-image: url("../../dist/imgs/p1.gif");
+}
+.pic2 {
+  background-image: url("../../dist/imgs/p2.gif");
+}
+.pic3 {
+  background-image: url("../../dist/imgs/p3.gif");
+}
+.pic4 {
+  background-image: url("../../dist/imgs/p4.jpg");
+}
+.Checkpoint2 {
+  width: 14.4em;
+  height: 14.4em;
+  margin: 0 auto;
+  background-color: aquamarine;
+  z-index: 2;
+  position: absolute;
+  top: 32%;
+  left: 0;
+  right: 0;
+}
+.Checkpoint2 div {
+  position: absolute;
+  width: 4.8em;
+  height: 4.8em;
+  z-index: 4;
+  background-size: 100% 100%;
+}
+.pic21 {
+  background-image: url("../../dist/imgs/t1.png");
+}
+.pic22 {
+  background-image: url("../../dist/imgs/t2.png");
+}
+.pic23 {
+  background-image: url("../../dist/imgs/t3.gif");
+}
+.pic24 {
+  background-image: url("../../dist/imgs/t4.png");
+}
+.pic25 {
+  background-image: url("../../dist/imgs/t5.png");
+}
+.pic26 {
+  background-image: url("../../dist/imgs/t6.gif");
+}
+.pic27 {
+  background-image: url("../../dist/imgs/t7.gif");
+}
+.pic28 {
+  background-image: url("../../dist/imgs/t8.gif");
+}
+.pic29 {
+  background-image: url("../../dist/imgs/t9.png");
+}

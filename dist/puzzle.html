@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="/dist/sheet/puzzle.css" type="text/css">-->
+    <!--<script type="text/javascript" src="/dist/js/puzzle.js"></script>-->
+    <link rel="stylesheet" href="./sheet/puzzle.css" type="text/css">
+    <script type="text/javascript" src="./js/puzzle.js"></script>
+    <title>拼图</title>
+</head>
+<body>
+    <div class="page" id="id1">
+        <div class="startButton"></div>
+    </div>
+    <div class="page page2 hidden " hidden id="id2">
+        <div class="introductionButton"></div>
+    </div>
+    <div class="page page3 hidden" id="id3">
+        <div class="Checkpoint1">
+            <!--这里需要在元素的style里面设置left和top否则，直接在css里面设置获取到的是""-->
+            <div class="pic pic1" data-index="1" style="left: 0em;top: 0em;"></div>
+            <div class="pic pic2" data-index="2" style="left: 7.2em;top: 0em;"></div>
+            <div class="pic pic3" data-index="3" style="left: 0em;top: 7.2em;"></div>
+            <div class="pic pic4" data-index="4" style="left: 7.2em;top: 7.2em;"></div>
+        </div>
+    </div>
+    <div class="page page4 hidden" id="id4">
+        <div class="Checkpoint2">
+            <div class="point2 pic21" data-index="1" style="left: 0em;top: 0em;"></div>
+            <div class="point2 pic22" data-index="2" style="left: 4.8em;top: 0em;"></div>
+            <div class="point2 pic23" data-index="3" style="left: 9.6em;top: 0em;"></div>
+            <div class="point2 pic24" data-index="4" style="left: 0em;top: 4.8em;"></div>
+            <div class="point2 pic25" data-index="5" style="left: 4.8em;top: 4.8em;"></div>
+            <div class="point2 pic26" data-index="6" style="left: 9.6em;top: 4.8em;"></div>
+            <div class="point2 pic27" data-index="7" style="left: 0em;top: 9.6em;"></div>
+            <div class="point2 pic28" data-index="8" style="left: 4.8em;top: 9.6em;"></div>
+            <div class="point2 pic29" data-index="9" style="left: 9.6em;top: 9.6em;"></div>
+        </div>
+    </div>
+    <div class="page page5 hidden" id="id5"></div>
+    <div class="page hidden" id="id6">
+        page6
+    </div>
+</body>
+</html>
