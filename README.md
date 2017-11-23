@@ -1,7 +1,7 @@
 # puzzle
 h5移动端拼图游戏
 
-# 安装
+#安装
 npm install
 
 #运行
