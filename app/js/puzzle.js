@@ -39,7 +39,7 @@ $(function () {
         Puzzle.initPuzzle(document.querySelectorAll('.pic'),'1234',4,".pic",true,function () {
             $('#id3').fadeOut(250);
             $('#id4').fadeIn(200);
-            Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2");
+            Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2",false);
             Puzzle.changeRandom();
         });
         Puzzle.changeRandom();
