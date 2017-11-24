@@ -37,11 +37,44 @@ $(function () {
         $('#id2').fadeOut(250);
         $('#id3').fadeIn(200);
         Puzzle.initPuzzle(document.querySelectorAll('.pic'),'1234',4,".pic",true,function () {
-            $('#id3').fadeOut(250);
-            $('#id4').fadeIn(200);
-            Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2",false);
-            Puzzle.changeRandom();
+            $(".puzzleSuccess").fadeIn(250);
         });
         Puzzle.changeRandom();
+    });
+    $(".continueButton").on('click',function () {
+        $(".puzzleSuccess").fadeOut(200);
+        $('#id3').fadeOut(250);
+        $('#id4').fadeIn(200);
+        Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2",false,function () {
+            $(".title2").fadeIn(200);
+        });
+        Puzzle.changeRandom();
+    });
+    $(".receiveRewardsButton").on('click',function () {
+        $(".title2").fadeOut();
+        $('#id4').fadeOut(250);
+        $('#id5').fadeIn(200);
+    });
+    $(".invitation").on('click',function () {
+        $(".title3").fadeIn(200);
+    });
+    $(".title3").on('click',function () {
+        $(".title3").fadeOut(200);
+    });
+    $(".inputInfo").on('click',function () {
+        $(".title3").fadeOut(200);
+        $('#id5').fadeOut(250);
+        $(".showThanks").fadeOut(0);
+        $('#id6').fadeIn(200);
+        $(".getReward").fadeIn(200);
+    });
+    $(".submitInfo").on('click',function () {
+        $(".getReward").fadeOut(200);
+        $(".showThanks").fadeIn(200);
+    });
+    $(".backShare").on('click',function () {
+        $(".showThanks").fadeOut(200);
+        $('#id5').fadeIn(200);
+        $('#id6').fadeOut(250);
     });
 });

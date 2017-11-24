@@ -131,22 +131,9 @@ function checkSuccess() {
         strTemp += tempPices[d].getAttribute('data-index');
     }
     if(strTemp == successStr){
-        // setTimeout(function () {
-        //     ("恭喜你，完成了");
-        // },400);
-        if(continueflag){
-            setTimeout(function () {
-                let temcontinue = confirm("恭喜你完成了本关！是否需要继续挑战？");
-                if(temcontinue){
-                    callback();
-                }
-            },400);
-        }else{
-           setTimeout(function () {
-               $('#id4').fadeOut(250);
-               $('#id5').fadeIn(200);
-           },400);
-        }
+        setTimeout(function () {
+            callback();
+        },400);
     }
 }
 

@@ -53,18 +53,80 @@ body{
   height: 3.5em;
   background-size: @100 @100 ;
 }
-.startButton{
-  background-image: url("../../dist/imgs/startbutton.png");
+.startButton,.introductionButton,.continueButton,.inputInfo,.invitation,.receiveRewards{
   .buttonStyle();
   .marginAuto();
+}
+.startButton{
+  background-image: url("../../dist/imgs/startbutton.png");
 }
 .page2{
   background-image: url("../../dist/imgs/page2.jpg");
 }
 .introductionButton{
   background-image: url("../../dist/imgs/introductionButton.png");
-  .buttonStyle();
-  .marginAuto();
+}
+.continueButton{
+  background-image: url("../../dist/imgs/continue.png");
+}
+.inputInfo{
+  background-image: url("../../dist/imgs/info.png");
+  top:65%;
+}
+.invitation{
+  background-image: url("../../dist/imgs/invitation.png");
+  top:70%;
+}
+.receiveRewards{
+  div{
+    border:solid 0.1em orange ;
+    border-radius: 1em;
+    padding:5px;
+    color: orange;
+  }
+}
+.puzzleSuccess{
+  .widthAndHeight100();
+  filter:alpha(opacity=40);
+  background-color: rgba(0,0,0,0.7);
+  z-index: 300;
+  position: absolute;
+}
+.getReward{
+  .widthAndHeight100();
+}
+.getReward{
+  div{
+    padding:10px 0;
+    color: orangered;
+    input{
+      font-size: 1em;
+      height:20px;
+    }
+  }
+}
+.submitInfo,.backShare{
+  border:solid 0.1em orangered;
+  border-radius: 1em;
+}
+.displayFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spanAndInput{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.successTiShi{
+  position: absolute;
+  color: red;
+  width: @100;
+  text-align: center;
+  top:40%;
 }
 .page3{
   background-image: url("../../dist/imgs/page3.png");
@@ -74,6 +136,9 @@ body{
 }
 .page5{
   background-image: url("../../dist/imgs/page5.jpg");
+}
+.page6{
+  background-image: url("../../dist/imgs/page6.jpg");
 }
 @Checkpoint1pic:14.4em;
 .Checkpoint1{
