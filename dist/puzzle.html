@@ -19,6 +19,12 @@
         <div class="introductionButton"></div>
     </div>
     <div class="page page3 hidden" id="id3">
+        <div class="puzzleSuccess hidden title1">
+            <div class="successTiShi">
+                恭喜你！完成了本关挑战！
+            </div>
+            <div class="continueButton" style="top:48%"></div>
+        </div>
         <div class="Checkpoint1">
             <!--这里需要在元素的style里面设置left和top否则，直接在css里面设置获取到的是""-->
             <div class="pic pic1" data-index="1" style="left: 0em;top: 0em;"></div>
@@ -28,6 +34,16 @@
         </div>
     </div>
     <div class="page page4 hidden" id="id4">
+        <div class="puzzleSuccess hidden title2">
+            <div class="successTiShi">
+                恭喜你！完成了所有挑战！
+            </div>
+            <div class="receiveRewards" style="top:48%">
+                <div class="receiveRewardsButton">
+                    点我领取奖励
+                </div>
+            </div>
+        </div>
         <div class="Checkpoint2">
             <div class="point2 pic21" data-index="1" style="left: 0em;top: 0em;"></div>
             <div class="point2 pic22" data-index="2" style="left: 4.8em;top: 0em;"></div>
@@ -40,9 +56,35 @@
             <div class="point2 pic29" data-index="9" style="left: 9.6em;top: 9.6em;"></div>
         </div>
     </div>
-    <div class="page page5 hidden" id="id5"></div>
-    <div class="page hidden" id="id6">
-        page6
+    <div class="page page5 hidden" id="id5">
+        <div class="puzzleSuccess hidden title3">
+            <div class="successTiShi">
+                点击右上角分享到朋友网或发送给朋友，邀请朋友来战！
+            </div>
+        </div>
+        <div class="inputInfo "></div>
+        <div class="invitation"></div>
+    </div>
+    <div class="page page6 hidden" id="id6">
+        <div class="getReward displayFlex">
+            <div class="spanAndInput">
+                <span>姓名：</span>
+                <input type="请输入您的姓名">
+            </div>
+            <div class="spanAndInput">
+                <span>电话：</span>
+                <input type="请输入您的电话">
+            </div>
+            <div class="submitInfo" style="padding:10px 20px;">
+                赢取奖励
+            </div>
+        </div>
+        <div class="showThanks spanAndInput hidden" style="width: 100%;height: 100%;flex-direction:column">
+            <div class="thanksDiv" style="text-align: center;color: #FFFFFF;">感谢您的参与，记得现场给威狮车队加油哦！最后大喊一声“威狮加油”就能领取精美礼品了哦！</div>
+            <div class="backShare" style="margin-top: 1em;border:solid 0.1em orangered;border-radius: 1em;padding:10px 20px;color: orangered;">
+                返回分享页面
+            </div>
+        </div>
     </div>
 </body>
 </html>

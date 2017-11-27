@@ -50,8 +50,8 @@ body {
   display: none;
 }
 .content {
-  position: relative;
-  top: 88%;
+  position: absolute;
+  bottom: 0;
   margin: 0 auto;
   width: 100%;
   left: 0;
@@ -61,8 +61,8 @@ body {
   margin: 0 auto;
 }
 .buttonStyle {
-  position: relative;
-  top: 88%;
+  position: absolute;
+  bottom: 0;
   margin: 0 auto;
   width: 100%;
   left: 0;
@@ -77,8 +77,8 @@ body {
 .inputInfo,
 .invitation,
 .receiveRewards {
-  position: relative;
-  top: 88%;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   left: 0;
   right: 0;
@@ -105,7 +105,7 @@ body {
 }
 .invitation {
   background-image: url("../../dist/imgs/invitation.png");
-  top: 70%;
+  top: 80%;
 }
 .receiveRewards div {
   border: solid 0.1em orange ;
@@ -159,10 +159,15 @@ body {
   top: 40%;
 }
 .page3 {
-  background-image: url("../../dist/imgs/page3.png");
+  background-image: url("../../dist/imgs/page3.jpg");
 }
 .page4 {
   background-image: url("../../dist/imgs/page4.jpg");
+}
+.page3,
+.page4 {
+  width: 100%;
+  height: 100%;
 }
 .page5 {
   background-image: url("../../dist/imgs/page5.jpg");

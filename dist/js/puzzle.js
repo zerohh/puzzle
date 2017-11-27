@@ -83,12 +83,12 @@
 	        $('#id2').fadeOut(250);
 	        $('#id3').fadeIn(200);
 	        Puzzle.initPuzzle(document.querySelectorAll('.pic'),'1234',4,".pic",true,function () {
-	            $(".puzzleSuccess").fadeIn(250);
+	            $(".title1").fadeIn(250);
 	        });
 	        Puzzle.changeRandom();
 	    });
 	    $(".continueButton").on('click',function () {
-	        $(".puzzleSuccess").fadeOut(200);
+	        $(".title1").fadeOut(200);
 	        $('#id3').fadeOut(250);
 	        $('#id4').fadeIn(200);
 	        Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2",false,function () {
