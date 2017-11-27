@@ -6,6 +6,7 @@ const Puzzle = require('./puzzlelogic');
 const imgwidth = 1310;//图片宽度
 const imgheight = 1920;//图片高度
 const aspectratio = (imgwidth/imgheight).toFixed(2);
+let checkPoint1Time = 0;
 //设置页面的高度为手机的高度
 $(function () {
     $("body").height = window.screen.height;
@@ -36,8 +37,18 @@ $(function () {
     $(".introductionButton").on('click',function () {
         $('#id2').fadeOut(250);
         $('#id3').fadeIn(200);
+        let startTime = new Date();
+        $("#useTime").text(0);
+        $(".countTime").show();
+        let intervalId = setInterval(function () {
+            let tempCurrentTime = new Date();
+            $("#useTime").text(((tempCurrentTime-startTime)/1000).toFixed(0));
+        },1000);
         Puzzle.initPuzzle(document.querySelectorAll('.pic'),'1234',4,".pic",true,function () {
             $(".title1").fadeIn(250);
+            clearInterval(intervalId);
+            $("#endTime").text($("#useTime").text());
+            checkPoint1Time = $("#useTime").text();
         });
         Puzzle.changeRandom();
     });
@@ -45,8 +56,19 @@ $(function () {
         $(".title1").fadeOut(200);
         $('#id3').fadeOut(250);
         $('#id4').fadeIn(200);
+        let startTime = new Date();
+        $("#useTime").text(0);
+        $(".countTime").show();
+        let intervalId2 = setInterval(function () {
+            let tempCurrentTime = new Date();
+            $("#useTime").text(((tempCurrentTime-startTime)/1000).toFixed(0));
+        },1000);
         Puzzle.initPuzzle(document.querySelectorAll('.point2'),'123456789',9,".point2",false,function () {
             $(".title2").fadeIn(200);
+            clearInterval(intervalId2);
+            $("#endTime2").text(checkPoint1Time);
+            $("#endTime3").text($("#useTime").text());
+            $(".countTime").fadeOut(100);
         });
         Puzzle.changeRandom();
     });
